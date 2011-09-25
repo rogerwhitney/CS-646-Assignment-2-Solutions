@@ -8,7 +8,6 @@
 
 #import "Link.h"
 
-// test
 
 @implementation Link
 
@@ -24,13 +23,15 @@
     return self;
 }
 
-- (void) collectElementsIn:(NSMutableArray *)collection {
-    [collection addObject: self.element];
-    [self.next collectElementsIn:collection];
-}
-
 - (NSString *) description {
-    return [NSString stringWithFormat:@"%@->%@", element, next];
+    return [NSString stringWithFormat:@"%@, %@", element, next];
 }
 
+- (void) enumerateObjectsUsingBlock:(void (^)(id object, NSUInteger index, BOOL *stop)) block listLocation: (NSInteger) index {
+    BOOL stop = FALSE;
+    block(element,index,&stop);
+    if (stop) return;
+    if (next)
+        [next enumerateObjectsUsingBlock:block listLocation:index - 1];
+}
 @end

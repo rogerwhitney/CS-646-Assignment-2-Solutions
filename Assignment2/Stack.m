@@ -34,12 +34,17 @@
     return self;   
 }
 
-- (id) pop {
-    count--;
+- (id) popElementUnreleased {
+  count--;
     id element = topOfStack.element;
     Link * oldTop = topOfStack;
     topOfStack = oldTop.next;
     [oldTop release];
+    return element;
+}
+
+- (id) pop {
+    id element = [self popElementUnreleased];
     [element autorelease];
     return element;
 }
@@ -53,22 +58,24 @@
 
 - (void) clear {
     while (topOfStack) {
-        [self pop];
+        [[self popElementUnreleased] release];
     }
 }
 
-- (NSMutableArray *) elementsAsArray {
-    NSMutableArray * listElements = [NSMutableArray arrayWithCapacity:self.count];
-    [topOfStack collectElementsIn:listElements];
-  return listElements;
-}
-
 - (NSString *) componentsJoinedByString:(NSString *)separator {
-      return [[self elementsAsArray] componentsJoinedByString:separator];
+    typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
+    __block NSMutableString * result = [[NSMutableString alloc] init ];
+    enumerateBlock generateString = ^(id object, NSUInteger index, BOOL *stop) { 
+        [result appendFormat:@"%@",object];
+        if (index > 1)
+            [result appendString:separator];};
+    [topOfStack enumerateObjectsUsingBlock:generateString listLocation: count];
+
+      return result;
 }
 
 - (void) enumerateObjectsUsingBlock:(void (^)(id object, NSUInteger index, BOOL *stop)) block {
-    [[self elementsAsArray] enumerateObjectsUsingBlock:block];
+    [topOfStack enumerateObjectsUsingBlock:block listLocation: count];
 }
 
 - (NSString *) description {

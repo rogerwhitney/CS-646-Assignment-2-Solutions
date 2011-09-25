@@ -13,5 +13,5 @@
 - (NSArray *) integerValues;
 - (int) globalCallCount;
 - (NSString * ) reverse;
-- (void) test;
+
 @end

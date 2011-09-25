@@ -30,9 +30,6 @@
     STAssertTrue([@"cba" isEqual: [@"abc" reverse]], @"reverse");
 }
 
-- (void) testStringTset {
-    [@"cat" test];
-}
 - (void) testGlobalCallCount {
     NSString * test = @"2";
     NSString * test2 = @"8";

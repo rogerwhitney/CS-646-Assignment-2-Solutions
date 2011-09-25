@@ -11,10 +11,6 @@
 @implementation NSString (Extras)
     static int masterCount;
 
-- (void) test {
-    NSLog(@"%@", self);
-}
-
 - (NSArray * ) integerValues {
     
     NSArray * parts = [self componentsSeparatedByString:@","];

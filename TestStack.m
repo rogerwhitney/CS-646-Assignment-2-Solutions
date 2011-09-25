@@ -15,7 +15,6 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
 - (void) testCreateWithArray {
     NSArray * elements = [NSArray arrayWithObjects:@"a", @"b", nil ];
     Stack * test = [Stack stackWithArray: elements];
-    NSLog(@"Stack test %@", test);
     STAssertTrue([@"b" isEqual: [test pop]], @"components");
     STAssertTrue([@"a" isEqual: [test pop]], @"components");
 }
@@ -23,7 +22,7 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
 - (void) testEnumerateObjectsUsingBlock {
     NSArray * elements = [NSArray arrayWithObjects:@"a", @"b", @"c", @"d", nil ];
     Stack * test = [Stack stackWithArray: elements];
-    __block NSMutableArray  * result = [NSMutableArray new];
+    NSMutableArray  * result = [NSMutableArray new];
     enumerateBlock collect = ^(id object, NSUInteger index, BOOL *stop) { 
     [result addObject:object];};
     [test enumerateObjectsUsingBlock:collect];
@@ -50,12 +49,11 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
     STAssertTrue([@"Stack((null))" isEqual: result], @"components");
     [test push:@"a"];
     result = [test description];
-    STAssertTrue([@"Stack(a->(null))" isEqual: result], @"components");
+    STAssertTrue([@"Stack(a, (null))" isEqual: result], @"components");
     [test push:@"b"];
-    STAssertTrue([@"Stack(b->a->(null))" isEqual: [test description]], @"components");
+    STAssertTrue([@"Stack(b, a, (null))" isEqual: [test description]], @"components");
     result = [test componentsJoinedByString: @", "];
-    NSLog(@" %@", result);
-    
+    STAssertTrue([@"b, a" isEqual: result], @"%@ should be %@", result,@"b, a");
 }
 
 - (void) testPushPop {
@@ -66,7 +64,6 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
     STAssertTrue([@"c" isEqual: [test pop]], @"pop");
     STAssertTrue([@"b" isEqual: [test pop]], @"pop");
     STAssertTrue([@"a" isEqual: [test pop]], @"pop");
-
 }
 
 - (void) testCount {
@@ -82,10 +79,13 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
     STAssertTrue(test.count == 0, @"equal");
 }
 
-- (void) testCopy {
+- (void) testRetain {
     Stack * test = [Stack new];
     NSNumber * data = [NSNumber numberWithInt:1];
+    NSInteger startRetainCount = [data retainCount];
     [test push: data];
+    NSInteger afterPushRetainCount = [data retainCount];
+    STAssertTrue(startRetainCount + 1 == afterPushRetainCount, @"expect 1 got %i", afterPushRetainCount - startRetainCount);
 }
 
 - (void) testClear {

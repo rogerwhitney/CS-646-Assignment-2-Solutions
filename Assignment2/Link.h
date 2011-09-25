@@ -21,6 +21,9 @@
 
 - initWithElement: (id) newElement next: (Link *) tail;
 
-- (void) collectElementsIn: (NSMutableArray * ) collection;
+
+// ListLocation index = n for topOfStack
+// ListLocation index = 1 for bottom of stack
+- (void) enumerateObjectsUsingBlock:(void (^)(id object, NSUInteger index, BOOL *stop)) block listLocation: (NSInteger) index;
 
 @end
