@@ -12,23 +12,6 @@
 
 @implementation Assignment2Tests
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void) testReverse {
-    STAssertTrue([@"cba" isEqual: [@"abc" reverse]], @"reverse");
-}
 
 - (void) testGlobalCallCount {
     NSString * test = @"2";
@@ -51,8 +34,6 @@
     NSArray * expectedResult = [NSArray arraywithInts: data count:1];
     NSArray * result = [@"2" integerValues];
     STAssertTrue([expectedResult isEqualToArray: result] ,@"single value");
-    // STAssertTrue([@"3" integerValues] == 3,@"single value 3");
-
 }
 
 - (void) testIntegerValue0  {
