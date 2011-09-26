@@ -19,6 +19,7 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
     STAssertTrue([@"a" isEqual: [test pop]], @"components");
 }
 
+
 - (void) testEnumerateObjectsUsingBlock {
     NSArray * elements = [NSArray arrayWithObjects:@"a", @"b", @"c", @"d", nil ];
     Stack * test = [Stack stackWithArray: elements];
