@@ -18,10 +18,10 @@
 		81360A9C1415B7370036A4CA /* NSString+NSString_Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */; };
 		81360AA51415DEE40036A4CA /* NSArray+Converting.h in Headers */ = {isa = PBXBuildFile; fileRef = 81360AA31415DEE40036A4CA /* NSArray+Converting.h */; };
 		81360AA61415DEE40036A4CA /* NSArray+Converting.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360AA41415DEE40036A4CA /* NSArray+Converting.m */; };
+		814F192A1430F8390037557D /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F19291430F8390037557D /* TestStack.m */; };
 		81A5C750141983B1002A612C /* StackInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C74F141983B1002A612C /* StackInterface.h */; };
 		81A5C75314198E33002A612C /* Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C75114198E33002A612C /* Stack.h */; };
 		81A5C75414198E33002A612C /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C75214198E33002A612C /* Stack.m */; };
-		81A5C7631419A5E7002A612C /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C7621419A5E7002A612C /* TestStack.m */; };
 		81A5C7661419B11D002A612C /* Link.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C7641419B11C002A612C /* Link.h */; };
 		81A5C7671419B11D002A612C /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C7651419B11C002A612C /* Link.m */; };
 /* End PBXBuildFile section */
@@ -55,11 +55,11 @@
 		81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_Extras.m"; sourceTree = "<group>"; };
 		81360AA31415DEE40036A4CA /* NSArray+Converting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Converting.h"; sourceTree = "<group>"; };
 		81360AA41415DEE40036A4CA /* NSArray+Converting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Converting.m"; sourceTree = "<group>"; };
+		814F19281430F8390037557D /* TestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStack.h; sourceTree = "<group>"; };
+		814F19291430F8390037557D /* TestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
 		81A5C74F141983B1002A612C /* StackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackInterface.h; sourceTree = "<group>"; };
 		81A5C75114198E33002A612C /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		81A5C75214198E33002A612C /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
-		81A5C7611419A5E7002A612C /* TestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestStack.h; path = ../TestStack.h; sourceTree = "<group>"; };
-		81A5C7621419A5E7002A612C /* TestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestStack.m; path = ../TestStack.m; sourceTree = "<group>"; };
 		81A5C7641419B11C002A612C /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
 		81A5C7651419B11C002A612C /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,11 +155,11 @@
 		81360A881415B6E60036A4CA /* Assignment2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				81A5C7611419A5E7002A612C /* TestStack.h */,
-				81A5C7621419A5E7002A612C /* TestStack.m */,
 				81360A8E1415B6E60036A4CA /* Assignment2Tests.h */,
 				81360A8F1415B6E60036A4CA /* Assignment2Tests.m */,
 				81360A891415B6E60036A4CA /* Supporting Files */,
+				814F19281430F8390037557D /* TestStack.h */,
+				814F19291430F8390037557D /* TestStack.m */,
 			);
 			path = Assignment2Tests;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81360A901415B6E60036A4CA /* Assignment2Tests.m in Sources */,
-				81A5C7631419A5E7002A612C /* TestStack.m in Sources */,
+				814F192A1430F8390037557D /* TestStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
