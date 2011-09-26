@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		81360A6D1415B6E60036A4CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81360A6C1415B6E60036A4CA /* Cocoa.framework */; };
 		81360A771415B6E60036A4CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81360A751415B6E60036A4CA /* InfoPlist.strings */; };
-		81360A7B1415B6E60036A4CA /* Assignment2.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360A7A1415B6E60036A4CA /* Assignment2.m */; };
 		81360A831415B6E60036A4CA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81360A821415B6E60036A4CA /* SenTestingKit.framework */; };
 		81360A841415B6E60036A4CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81360A6C1415B6E60036A4CA /* Cocoa.framework */; };
 		81360A871415B6E60036A4CA /* Assignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81360A691415B6E60036A4CA /* Assignment2.framework */; };
@@ -46,8 +45,6 @@
 		81360A741415B6E60036A4CA /* Assignment2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment2-Info.plist"; sourceTree = "<group>"; };
 		81360A761415B6E60036A4CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81360A781415B6E60036A4CA /* Assignment2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment2-Prefix.pch"; sourceTree = "<group>"; };
-		81360A791415B6E60036A4CA /* Assignment2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment2.h; sourceTree = "<group>"; };
-		81360A7A1415B6E60036A4CA /* Assignment2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment2.m; sourceTree = "<group>"; };
 		81360A811415B6E60036A4CA /* Assignment2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81360A821415B6E60036A4CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		81360A8A1415B6E60036A4CA /* Assignment2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment2Tests-Info.plist"; sourceTree = "<group>"; };
@@ -131,8 +128,6 @@
 		81360A721415B6E60036A4CA /* Assignment2 */ = {
 			isa = PBXGroup;
 			children = (
-				81360A791415B6E60036A4CA /* Assignment2.h */,
-				81360A7A1415B6E60036A4CA /* Assignment2.m */,
 				81360A731415B6E60036A4CA /* Supporting Files */,
 				81360A991415B7370036A4CA /* NSString+NSString_Extras.h */,
 				81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */,
@@ -300,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81360A7B1415B6E60036A4CA /* Assignment2.m in Sources */,
 				81360A9C1415B7370036A4CA /* NSString+NSString_Extras.m in Sources */,
 				81360AA61415DEE40036A4CA /* NSArray+Converting.m in Sources */,
 				81A5C75414198E33002A612C /* Stack.m in Sources */,
