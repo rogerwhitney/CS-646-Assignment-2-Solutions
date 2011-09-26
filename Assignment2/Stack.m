@@ -35,7 +35,7 @@
 }
 
 - (id) popElementUnreleased {
-  count--;
+    count--;
     id element = topOfStack.element;
     Link * oldTop = topOfStack;
     topOfStack = oldTop.next;

@@ -15,6 +15,16 @@
 		81360A871415B6E60036A4CA /* Assignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81360A691415B6E60036A4CA /* Assignment2.framework */; };
 		81360A8D1415B6E60036A4CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81360A8B1415B6E60036A4CA /* InfoPlist.strings */; };
 		81360A901415B6E60036A4CA /* Assignment2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360A8F1415B6E60036A4CA /* Assignment2Tests.m */; };
+		81360A9B1415B7370036A4CA /* NSString+NSString_Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = 81360A991415B7370036A4CA /* NSString+NSString_Extras.h */; };
+		81360A9C1415B7370036A4CA /* NSString+NSString_Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */; };
+		81360AA51415DEE40036A4CA /* NSArray+Converting.h in Headers */ = {isa = PBXBuildFile; fileRef = 81360AA31415DEE40036A4CA /* NSArray+Converting.h */; };
+		81360AA61415DEE40036A4CA /* NSArray+Converting.m in Sources */ = {isa = PBXBuildFile; fileRef = 81360AA41415DEE40036A4CA /* NSArray+Converting.m */; };
+		81A5C750141983B1002A612C /* StackInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C74F141983B1002A612C /* StackInterface.h */; };
+		81A5C75314198E33002A612C /* Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C75114198E33002A612C /* Stack.h */; };
+		81A5C75414198E33002A612C /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C75214198E33002A612C /* Stack.m */; };
+		81A5C7631419A5E7002A612C /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C7621419A5E7002A612C /* TestStack.m */; };
+		81A5C7661419B11D002A612C /* Link.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A5C7641419B11C002A612C /* Link.h */; };
+		81A5C7671419B11D002A612C /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A5C7651419B11C002A612C /* Link.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,17 +43,28 @@
 		81360A6F1415B6E60036A4CA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		81360A701415B6E60036A4CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		81360A711415B6E60036A4CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		81360A741415B6E60036A4CA /* Assignment2-Info.plist */ = {isa = PBXFileReference; path = "Assignment2-Info.plist"; sourceTree = "<group>"; };
+		81360A741415B6E60036A4CA /* Assignment2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment2-Info.plist"; sourceTree = "<group>"; };
 		81360A761415B6E60036A4CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81360A781415B6E60036A4CA /* Assignment2-Prefix.pch */ = {isa = PBXFileReference; path = "Assignment2-Prefix.pch"; sourceTree = "<group>"; };
-		81360A791415B6E60036A4CA /* Assignment2.h */ = {isa = PBXFileReference; path = Assignment2.h; sourceTree = "<group>"; };
+		81360A781415B6E60036A4CA /* Assignment2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment2-Prefix.pch"; sourceTree = "<group>"; };
+		81360A791415B6E60036A4CA /* Assignment2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment2.h; sourceTree = "<group>"; };
 		81360A7A1415B6E60036A4CA /* Assignment2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment2.m; sourceTree = "<group>"; };
 		81360A811415B6E60036A4CA /* Assignment2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81360A821415B6E60036A4CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		81360A8A1415B6E60036A4CA /* Assignment2Tests-Info.plist */ = {isa = PBXFileReference; path = "Assignment2Tests-Info.plist"; sourceTree = "<group>"; };
+		81360A8A1415B6E60036A4CA /* Assignment2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment2Tests-Info.plist"; sourceTree = "<group>"; };
 		81360A8C1415B6E60036A4CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81360A8E1415B6E60036A4CA /* Assignment2Tests.h */ = {isa = PBXFileReference; path = Assignment2Tests.h; sourceTree = "<group>"; };
+		81360A8E1415B6E60036A4CA /* Assignment2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment2Tests.h; sourceTree = "<group>"; };
 		81360A8F1415B6E60036A4CA /* Assignment2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment2Tests.m; sourceTree = "<group>"; };
+		81360A991415B7370036A4CA /* NSString+NSString_Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_Extras.h"; sourceTree = "<group>"; };
+		81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_Extras.m"; sourceTree = "<group>"; };
+		81360AA31415DEE40036A4CA /* NSArray+Converting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Converting.h"; sourceTree = "<group>"; };
+		81360AA41415DEE40036A4CA /* NSArray+Converting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Converting.m"; sourceTree = "<group>"; };
+		81A5C74F141983B1002A612C /* StackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackInterface.h; sourceTree = "<group>"; };
+		81A5C75114198E33002A612C /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		81A5C75214198E33002A612C /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		81A5C7611419A5E7002A612C /* TestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestStack.h; path = ../TestStack.h; sourceTree = "<group>"; };
+		81A5C7621419A5E7002A612C /* TestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestStack.m; path = ../TestStack.m; sourceTree = "<group>"; };
+		81A5C7641419B11C002A612C /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		81A5C7651419B11C002A612C /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +134,15 @@
 				81360A791415B6E60036A4CA /* Assignment2.h */,
 				81360A7A1415B6E60036A4CA /* Assignment2.m */,
 				81360A731415B6E60036A4CA /* Supporting Files */,
+				81360A991415B7370036A4CA /* NSString+NSString_Extras.h */,
+				81360A9A1415B7370036A4CA /* NSString+NSString_Extras.m */,
+				81360AA31415DEE40036A4CA /* NSArray+Converting.h */,
+				81360AA41415DEE40036A4CA /* NSArray+Converting.m */,
+				81A5C74F141983B1002A612C /* StackInterface.h */,
+				81A5C75114198E33002A612C /* Stack.h */,
+				81A5C75214198E33002A612C /* Stack.m */,
+				81A5C7641419B11C002A612C /* Link.h */,
+				81A5C7651419B11C002A612C /* Link.m */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -130,6 +160,8 @@
 		81360A881415B6E60036A4CA /* Assignment2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				81A5C7611419A5E7002A612C /* TestStack.h */,
+				81A5C7621419A5E7002A612C /* TestStack.m */,
 				81360A8E1415B6E60036A4CA /* Assignment2Tests.h */,
 				81360A8F1415B6E60036A4CA /* Assignment2Tests.m */,
 				81360A891415B6E60036A4CA /* Supporting Files */,
@@ -153,6 +185,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81360A9B1415B7370036A4CA /* NSString+NSString_Extras.h in Headers */,
+				81360AA51415DEE40036A4CA /* NSArray+Converting.h in Headers */,
+				81A5C750141983B1002A612C /* StackInterface.h in Headers */,
+				81A5C75314198E33002A612C /* Stack.h in Headers */,
+				81A5C7661419B11D002A612C /* Link.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81360A7B1415B6E60036A4CA /* Assignment2.m in Sources */,
+				81360A9C1415B7370036A4CA /* NSString+NSString_Extras.m in Sources */,
+				81360AA61415DEE40036A4CA /* NSArray+Converting.m in Sources */,
+				81A5C75414198E33002A612C /* Stack.m in Sources */,
+				81A5C7671419B11D002A612C /* Link.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81360A901415B6E60036A4CA /* Assignment2Tests.m in Sources */,
+				81A5C7631419A5E7002A612C /* TestStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +463,7 @@
 				81360A951415B6E60036A4CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81360A961415B6E60036A4CA /* Build configuration list for PBXNativeTarget "Assignment2Tests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +472,7 @@
 				81360A981415B6E60036A4CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,5 @@
 
 - (NSArray *) integerValues;
 - (int) globalCallCount;
-- (NSString * ) reverse;
 
 @end

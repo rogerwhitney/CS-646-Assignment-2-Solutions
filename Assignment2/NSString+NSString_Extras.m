@@ -26,11 +26,4 @@
     return masterCount;
 }
 
-- (NSString *) reverse {
-    NSMutableString * reverse = [NSMutableString stringWithCapacity:[self length]];
-    for (NSInteger k = [self length] - 1;k>=0;k--) {
-        [reverse appendFormat:@"%C", [self characterAtIndex:k]];
-    }
-    return reverse;
-}
 @end
