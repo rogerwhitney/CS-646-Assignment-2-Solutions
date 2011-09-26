@@ -62,6 +62,7 @@
 		814F19121430F2140037557D /* StackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackInterface.h; sourceTree = "<group>"; };
 		814F19211430F40E0037557D /* TestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStack.h; sourceTree = "<group>"; };
 		814F19221430F40E0037557D /* TestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
+		814F197314311EB90037557D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		81360A5D1415B6E60036A4CA = {
 			isa = PBXGroup;
 			children = (
+				814F197314311EB90037557D /* README.txt */,
 				81360A721415B6E60036A4CA /* Assignment2 */,
 				81360A881415B6E60036A4CA /* Assignment2Tests */,
 				81360A6B1415B6E60036A4CA /* Frameworks */,
