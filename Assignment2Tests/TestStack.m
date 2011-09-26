@@ -47,12 +47,12 @@ typedef void (^enumerateBlock)(id object, NSUInteger index, BOOL *stop);
 - (void) testComponentsJoinedBy {
     Stack * test = [Stack new];
     NSString * result = [test description];
-    STAssertTrue([@"Stack((null))" isEqual: result], @"components");
+    STAssertTrue([@"Stack()" isEqual: result], @"components");
     [test push:@"a"];
     result = [test description];
-    STAssertTrue([@"Stack(a, (null))" isEqual: result], @"components");
+    STAssertTrue([@"Stack(a)" isEqual: result], @"components");
     [test push:@"b"];
-    STAssertTrue([@"Stack(b, a, (null))" isEqual: [test description]], @"components");
+    STAssertTrue([@"Stack(b, a)" isEqual: [test description]], @"components");
 }
 
 - (void) testPushPop {

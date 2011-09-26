@@ -79,7 +79,7 @@
 }
 
 - (NSString *) description {
-    return [NSString stringWithFormat:@"Stack(%@)", topOfStack];
+    return [NSString stringWithFormat:@"Stack(%@)", [self componentsJoinedByString:@", "]];
 }
 
 - (void) dealloc {

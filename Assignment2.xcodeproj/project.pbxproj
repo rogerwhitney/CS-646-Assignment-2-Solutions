@@ -57,6 +57,7 @@
 		81360AA41415DEE40036A4CA /* NSArray+Converting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Converting.m"; sourceTree = "<group>"; };
 		814F19281430F8390037557D /* TestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStack.h; sourceTree = "<group>"; };
 		814F19291430F8390037557D /* TestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
+		814F1992143124970037557D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		81A5C74F141983B1002A612C /* StackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackInterface.h; sourceTree = "<group>"; };
 		81A5C75114198E33002A612C /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		81A5C75214198E33002A612C /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		81360A5D1415B6E60036A4CA = {
 			isa = PBXGroup;
 			children = (
+				814F1992143124970037557D /* README.txt */,
 				81360A721415B6E60036A4CA /* Assignment2 */,
 				81360A881415B6E60036A4CA /* Assignment2Tests */,
 				81360A6B1415B6E60036A4CA /* Frameworks */,

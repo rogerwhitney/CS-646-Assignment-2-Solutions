@@ -23,10 +23,6 @@
     return self;
 }
 
-- (NSString *) description {
-    return [NSString stringWithFormat:@"%@, %@", element, next];
-}
-
 - (void) enumerateObjectsUsingBlock:(void (^)(id object, NSUInteger index, BOOL *stop)) block listLocation: (NSInteger) index {
     BOOL stop = FALSE;
     block(element,index,&stop);
